@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/widget_background">
+
+    <!-- Widget Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_task"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TaskMaster"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#2196F3" />
+
+        <TextView
+            android:id="@+id/widget_task_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 tasks"
+            android:textSize="12sp"
+            android:textColor="#666666" />
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Current Task -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/widget_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No active tasks"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/widget_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="11sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/widget_task_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/priority_medium_background"
+                android:paddingHorizontal="6dp"
+                android:paddingVertical="2dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/widget_task_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Work"
+                android:textSize="10sp"
+                android:textColor="#2196F3"
+                android:layout_marginStart="8dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Footer -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tap to open app"
+        android:textSize="10sp"
+        android:textColor="#999999"
+        android:gravity="center"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

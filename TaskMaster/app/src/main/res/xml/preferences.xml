@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Appearance">
+        <ListPreference
+            android:defaultValue="system"
+            android:entries="@array/theme_entries"
+            android:entryValues="@array/theme_values"
+            android:key="theme_key"
+            android:title="Theme"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="notifications_key"
+            android:summary="Enable task reminders and notifications"
+            android:title="Enable notifications" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Pomodoro Settings">
+        <EditTextPreference
+            android:defaultValue="25"
+            android:key="pomodoro_work_duration"
+            android:title="Work duration"
+            android:inputType="number" />
+        <EditTextPreference
+            android:defaultValue="5"
+            android:key="pomodoro_break_duration"
+            android:title="Break duration"
+            android:inputType="number" />
+    </PreferenceCategory>
+</PreferenceScreen>

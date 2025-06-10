@@ -1,0 +1,66 @@
+[versions]
+agp = "8.8.2"
+firebaseBom = "33.15.0"
+googleApiClient = "2.0.0"
+googleApiClientAndroid = "2.2.0"
+googleApiServicesCalendar = "v3-rev20230728-2.0.0"
+googleApiServicesCalendarVersion = "v3-rev20220715-2.0.0"
+googleHttpClientGson = "1.42.3"
+googleOauthClient = "1.34.1"
+googleOauthClientJetty = "1.34.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+loggingInterceptor = "4.9.0"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+playServicesAuth = "21.3.0"
+retrofit = "2.9.0"
+roomCompiler = "2.7.1"
+swiperefreshlayout = "1.1.0"
+roomCommonJvm = "2.7.1"
+preference = "1.2.1"
+navigationFragment = "2.9.0"
+navigationUi = "2.9.0"
+roomRuntimeAndroid = "2.7.1"
+firebaseFirestore = "25.1.4"
+firebaseAuth = "23.2.1"
+
+[libraries]
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+google-api-client = { module = "com.google.api-client:google-api-client", version.ref = "googleApiClient" }
+google-api-client-android = { module = "com.google.api-client:google-api-client-android", version.ref = "googleApiClientAndroid" }
+google-api-services-calendar = { module = "com.google.apis:google-api-services-calendar", version.ref = "googleApiServicesCalendar" }
+google-api-services-calendar-vv3rev20220715200 = { module = "com.google.apis:google-api-services-calendar", version.ref = "googleApiServicesCalendarVersion" }
+google-firebase-auth = { module = "com.google.firebase:firebase-auth" }
+google-firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+google-http-client-gson = { module = "com.google.http-client:google-http-client-gson", version.ref = "googleHttpClientGson" }
+google-oauth-client = { module = "com.google.oauth-client:google-oauth-client", version.ref = "googleOauthClient" }
+google-oauth-client-jetty = { module = "com.google.oauth-client:google-oauth-client-jetty", version.ref = "googleOauthClientJetty" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+logging-interceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "loggingInterceptor" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "roomCompiler" }
+swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+room-common-jvm = { group = "androidx.room", name = "room-common-jvm", version.ref = "roomCommonJvm" }
+preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+room-runtime-android = { group = "androidx.room", name = "room-runtime-android", version.ref = "roomRuntimeAndroid" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+

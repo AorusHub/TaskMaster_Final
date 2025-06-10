@@ -1,0 +1,61 @@
+com.AorusHub.taskmaster/
+├── MainActivity.java
+├── SplashActivity.java  
+├── adapter/
+│   ├── TaskAdapter.java
+│   ├── CategoryAdapter.java
+│   └── AchievementAdapter.java
+├── api/
+│   ├── ApiService.java
+│   ├── RetrofitClient.java
+│   └── response/
+│       ├── TaskResponse.java
+│       └── UserResponse.java
+├── data/
+│   ├── repository/
+│   │   ├── TaskRepository.java
+│   │   └── UserRepository.java
+│   ├── local/
+│   │   ├── TaskDatabase.java
+│   │   ├── dao/
+│   │   │   ├── TaskDao.java
+│   │   │   └── CategoryDao.java
+│   │   └── entity/
+│   │       ├── TaskEntity.java
+│   │       ├── CategoryEntity.java
+│   │       └── PomodoroEntity.java
+│   └── remote/
+│       └── RemoteDataSource.java
+├── model/
+│   ├── Task.java
+│   ├── Category.java
+│   ├── Pomodoro.java
+│   ├── Achievement.java
+│   └── UserStats.java
+├── ui/
+│   ├── activity/
+│   │   ├── DetailTaskActivity.java
+│   │   └── SettingsActivity.java
+│   ├── fragment/
+│   │   ├── TaskListFragment.java
+│   │   ├── AddTaskFragment.java
+│   │   ├── StatisticsFragment.java
+│   │   ├── PomodoroFragment.java
+│   │   ├── AchievementsFragment.java
+│   │   └── ProfileFragment.java
+│   └── dialog/
+│       ├── TaskFilterDialog.java
+│       └── PomodoroSettingsDialog.java
+├── util/
+│   ├── Constants.java
+│   ├── DateTimeUtils.java
+│   ├── NotificationHelper.java
+│   ├── ThemeHelper.java
+│   └── PomodoroTimer.java
+├── viewmodel/
+│   ├── TaskViewModel.java
+│   ├── PomodoroViewModel.java
+│   ├── StatisticsViewModel.java
+│   └── SharedViewModel.java
+└── widget/
+    └── TaskWidgetProvider.java

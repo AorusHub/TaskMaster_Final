@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="work_color">#FFE57373</color> <!-- Light red for work -->
+    <color name="break_color">#FF81C784</color>
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="primary">#FF6200EE</color>
+    <color name="primary_dark">#FF3700B3</color>
+    <color name="secondary">#FF03DAC5</color>
+    <color name="secondary_dark">#FF018786</color>
+
+    <!-- Blue theme -->
+    <color name="blue_primary">#1976D2</color>
+    <color name="blue_primary_dark">#0D47A1</color>
+    <color name="blue_secondary">#29B6F6</color>
+    <color name="blue_secondary_dark">#0288D1</color>
+
+    <!-- Green theme -->
+    <color name="green_primary">#43A047</color>
+    <color name="green_primary_dark">#2E7D32</color>
+    <color name="green_secondary">#66BB6A</color>
+    <color name="green_secondary_dark">#388E3C</color>
+
+    <!-- Purple theme -->
+    <color name="purple_primary">#8E24AA</color>
+    <color name="purple_primary_dark">#6A1B9A</color>
+    <color name="purple_secondary">#BA68C8</color>
+    <color name="purple_secondary_dark">#8E24AA</color>
+
+    <color name="primary_color">#FF6B6B</color>
+    <color name="accent_color">#4ECDC4</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="progress_track">#E8E8E8</color>
+
+    <!-- Work/Break Mode Colors -->
+    <color name="long_break_color">#45B7D1</color>
+
+    <color name="light_theme_preview">#FFD700</color>
+    <color name="dark_theme_preview">#424242</color>
+    <color name="system_theme_preview">#2196F3</color>
+</resources>

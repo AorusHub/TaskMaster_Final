@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Priority Filter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Priority"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioPriorityAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Priorities" />
+
+            <RadioButton
+                android:id="@+id/radioPriorityHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="High" />
+
+            <RadioButton
+                android:id="@+id/radioPriorityMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/radioPriorityLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Low" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Category Filter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Status Filter -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioStatusAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Status" />
+
+            <RadioButton
+                android:id="@+id/radioStatusCompleted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completed" />
+
+            <RadioButton
+                android:id="@+id/radioStatusPending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pending" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Sorting Options -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort By"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioSortDueDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Due Date" />
+
+            <RadioButton
+                android:id="@+id/radioSortCreatedDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created Date" />
+
+            <RadioButton
+                android:id="@+id/radioSortPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priority" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>
